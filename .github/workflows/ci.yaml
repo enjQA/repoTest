@@ -12,4 +12,4 @@ jobs:
       - name: Install packages
         uses: npm Install
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: npm test
