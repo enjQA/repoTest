@@ -1,6 +1,9 @@
 name: Cypress Try
 on: [push]
 jobs:
+  eslint:
+    name: lint code base
+    runs-on: ubuntu-latest
   cypress-run: 
     runs-on: ubuntu-latest
     steps:
