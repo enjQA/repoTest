@@ -48,7 +48,7 @@ describe('User can use filters for issues finding', function() {
         })
     })
 
-    it.only('User can use Tracker filter correctly', function() {
+    it('User can use Tracker filter correctly', function() {
         pIssues.clickClearFiltersBtn();
         pIssues.selectStatusParametrs('all', '')
         pIssues.selectTrackerFilterWithOperatorValue('is');
@@ -178,7 +178,7 @@ describe('User can use filters for issues finding', function() {
         pIssues.moveToPreviousPage();
     })
 
-    it.only('User can use Closed filter correctly', function() {
+    it('User can use Closed filter correctly', function() {
         pIssues.clickClearFiltersBtn();
         pIssues.selectStatusParametrs('all', '')
         pIssues.selectClosedFilterWithOperatorValue('is');

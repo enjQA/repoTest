@@ -4,7 +4,7 @@ const pSearch = new PagesSearch;
 
 describe('User should use Search correctly', function() {
     before(() => {
-        pSearch.visitRedmineSearchPage();
+        cy.visit(Cypress.env('REDMINE_SEARCH_PAGE'))
         pSearch.selectSearchInAllProjects();
         pSearch.clickSubmitBtn()
     })
@@ -75,7 +75,7 @@ describe('User should use Search correctly', function() {
         pSearch.typeInSearchInput('project');
         pSearch.selectSearchInAllProjects();
         pSearch.clickForSearchInMessages();
-        pSearch.searchResult.each((result) => {
+        pSearch.searchResultsBlock.each((result) => {
             if(result.has(pSearch.resultsFromMessageBlock)) {
                 expect(result).be.exist;
             } else {
