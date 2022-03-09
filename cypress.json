@@ -1,0 +1,9 @@
+{
+    "env": {
+        "REDMINE_HOME_PAGE": "https://www.redmine.org/",
+        "REDMINE_LOGIN_PAGE": "https://www.redmine.org/login",
+        "REDMINE_REGISTER_PAGE": "https://www.redmine.org/account/register",
+        "REDMINE_SEARCH_PAGE": "https://www.redmine.org/projects/redmine/search"
+
+    }
+}
