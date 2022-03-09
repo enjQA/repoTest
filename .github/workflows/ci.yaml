@@ -1,0 +1,12 @@
+name: Cypress Try
+on: [push]
+jobs:
+  cypress-run: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: action/checkout@v2
+      - name: Install packages
+        uses: npm Install
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
